@@ -1,5 +1,6 @@
 var express = require('express');
-import data from './data/test.json';
+//import data from './data/test.json';
+let data = require('./data/test.json');
 
 var app = express();
 const PORT = 3000;
