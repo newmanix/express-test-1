@@ -1,7 +1,7 @@
 var express = require('express');
 
 var app = express();
-const port = 3000;
+const PORT = 3000;
 
 //allows access to the root for serving static files
 app.use(express.static(__dirname));
