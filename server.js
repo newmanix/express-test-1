@@ -4,7 +4,8 @@ var app = express();
 const PORT = 3000;
 
 app.get('/',(req,res) =>{
-  res.send(`We're at the root of the app, on port ${PORT}`);
+  //res.send(`We're at the root of the app, on port ${PORT}`);
+  res.json(data);
 });
 
 //allows access to the root for serving static files
