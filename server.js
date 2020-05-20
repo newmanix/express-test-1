@@ -1,9 +1,11 @@
 var express = require('express');
-//import data from './data/test.json';
-var data = require('./data/test.json');
-
+var data = require('./data/test.json');//our test data
 var app = express();
 const PORT = 3000;
+
+app.get('/',(req,res) =>{
+  res.send(`We're at the root of the app, on port ${PORT}`);
+});
 
 //allows access to the root for serving static files
 app.use(express.static(__dirname));
